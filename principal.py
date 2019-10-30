@@ -1,3 +1,8 @@
+import os
+os.system("cls")
+
+
+# Menu principal
 print("Bienvenidos a nuestro sistema matricula"
 "\ndonde aca le ayudaremos a darle informacion si eres postulante"
 "\no estudiante actual en nuestra universidad")
@@ -5,42 +10,70 @@ print("Selecciona una de las opciones de su preferencia")
 print("1.- Alumno usilio"
 "\n2.- Postulante Pregrado"
 "\n3.- Salir")
-while True:
-    opcion = int(input("Seleccione una opcion: "))
 
+# Codificacion de eleccion de menu
+while True:
+    opcion = int(input("Seleccione una opcion del menu: "))
+
+    # Ingreso de datos del alumno
     if (opcion == 1):
         usuario = input("Ingrese su usuario: ")
         password = input("Ingrese su contraseña: ")
-        if (usuario == "123" and password == "123"):
+        while True:
+            if (usuario == "123" and password == "123"):
+                # Opciones para el usilio
                 print("Bienvenido alumno David, que desea realizar hoy")
                 print("Le recordamos eres de la modalidad de tercio superior")
                 print("Selecciona una de las opciones que desea realizar: "
+                "\n1.- Numero de veces que llevas en un curso y notas"
+                "\n2.- Eleccion de horarios 2020-01")
+
+                
+                opcionalum = int(input("Seleccione una opcion del menu usilio: "))
+                if opcionalum == 1:
+                    print("Reporte de cursos: ")
+                    print("En Calculo I lo has pasado con 15, pasaste a la 1era " )
+                    print("En Fisica I lo has pasado con 14, pasaste a la 1era ")
+                    print("En Poo lo has pasado con 17, pasaste a la 1era")
+                    print("En Taller lo has pasado con 18, pasaste a la 1era")
+                    print("En Marketing lo has pasado con 14, pasaste a la 1era")
+                    print("En Intro lo has pasado con 17, pasaste a la 1era")
+                    print("Esta disponible a llevar los cursos siguientes")
+                    x = input("Desea continuar en el menu usilio S/N: ").lower()
+                    if x != "s":
+                        print("Ha salido existosamente del menu usilio")
+                        break
+
+            elif (usuario == "abc" and password == "abc"):
+                print("Bienvenido alumna Mariaelena, que desea realizar hoy")
+                print("Le recordamos eres de la modalidad de beca 18")
+                print("Selecciona una de las opciones que desea realizar: "
                 "\n1.- Numero de veces que llevas en un curso"
                 "\n2.- Eleccion de horarios 2020-01")
-                opcionalum = input("Seleccione una opcion: ")
+
+                opcionalum = int(input("Seleccione una opcion del menu usilio: "))
                 if opcionalum == 1:
-                    CalculoI = 1
-                    FisicaI = 1
-                    Poo = 1
-                    Taller = 1
-                    Marketing = 1
-                    Intro = 1
-                    print("Reporte universitario: "
-                    print("En Calculo I lo esta llevando por ", CalculoI)
-                    print("En Fisica I uno lo esta llevando por ", FisicaI)
-                    print("En Poo lo esta llevando por ", Poo)
-                    print("En Taller lo esta llevando por ", Taller)
-                    print("En Marketing lo esta llevando por ", Marketing)
-                    print("En Intro lo esta llevando por ", Intro)
+                    print("Reporte de cursos: ")
+                    print("En Calculo I no lo has pasado, nota 10, lo llevaras por 2da vez " )
+                    print("En Estadistica lo has pasado con 14, pasaste a la 1era ")
+                    print("En Poo lo has pasado con 17, pasaste a la 1era")
+                    print("En Taller lo has pasado con 13, pasaste a la 1era")
+                    print("En ADD lo has pasado con 14, pasaste a la 1era")
+                    print("En Fisica general lo has pasado con 17, pasaste a la 1era")
+                    print("Esta disponible a llevar los cursos siguientes pero no de Calculo II")
+                    x = input("Desea continuar en el menu usilio S/N: ").lower()
+                    if x != "s":
+                        print("Ha salido existosamente del menu usilio")
+                        break
+                    
+            else:
+                print("Ingresa nuevamente sus datos o seleccione otra opcion")
 
+        
 
-
-
-
-
-
+    
     if opcion == 3:
+        print("Termino la aplicacion, muchas gracias")
         break
-
 
 
