@@ -1,3 +1,7 @@
+import os
+os.system("cls")
+
+
 # Menu principal
 print("Bienvenidos a nuestro sistema matricula"
 "\ndonde aca le ayudaremos a darle informacion si eres postulante"
@@ -15,7 +19,8 @@ while True:
     if (opcion == 1):
         usuario = input("Ingrese su usuario: ")
         password = input("Ingrese su contraseña: ")
-        if (usuario == "123" and password == "123"):
+        while True:
+            if (usuario == "123" and password == "123"):
                 # Opciones para el usilio
                 print("Bienvenido alumno David, que desea realizar hoy")
                 print("Le recordamos eres de la modalidad de tercio superior")
@@ -34,8 +39,12 @@ while True:
                     print("En Marketing lo has pasado con 14, pasaste a la 1era")
                     print("En Intro lo has pasado con 17, pasaste a la 1era")
                     print("Esta disponible a llevar los cursos siguientes")
+                    x = input("Desea continuar en el menu usilio S/N: ").lower()
+                    if x != "s":
+                        print("Ha salido existosamente del menu usilio")
+                        break
 
-        elif (usuario == "abc" and password == "abc"):
+            elif (usuario == "abc" and password == "abc"):
                 print("Bienvenido alumna Mariaelena, que desea realizar hoy")
                 print("Le recordamos eres de la modalidad de beca 18")
                 print("Selecciona una de las opciones que desea realizar: "
@@ -52,9 +61,15 @@ while True:
                     print("En ADD lo has pasado con 14, pasaste a la 1era")
                     print("En Fisica general lo has pasado con 17, pasaste a la 1era")
                     print("Esta disponible a llevar los cursos siguientes pero no de Calculo II")
+                    x = input("Desea continuar en el menu usilio S/N: ").lower()
+                    if x != "s":
+                        print("Ha salido existosamente del menu usilio")
+                        break
                     
-        else:
-            print("Ingresa nuevamente sus datos o seleccione otra opcion")
+            else:
+                print("Ingresa nuevamente sus datos o seleccione otra opcion")
+
+        
 
     
     if opcion == 3:
