@@ -44,9 +44,12 @@ while True:
                 #7 y 9 nacional
                 #10 precio general
                 if x == 1:
-                    print("usted a elegido la carrera de Ingeniería informática y de sistemas")
+                    print("Usted a elegido la carrera de Ingeniería informática y de sistemas")
+                    
+
                 if x == 2:
                     print("Usted a elegido la carrera de Administración para los negocios")
+                    
                 if x == 3:
                     print("Usted a elegido la carrera de Arquitectura")
 
@@ -82,7 +85,7 @@ while True:
                 print("3 - Arquitectura")
                 x = int(input("Ingrese la carrera a la que va postular: "))
                 if x == 1:
-                    print("usted a elegido la carrera de Ingeniería informática y de sistemas")
+                    print("Usted a elegido la carrera de Ingeniería informática y de sistemas")
                 if x == 2:
                     print("Usted a elegido la carrera de Administración para los negocios")
                 if x == 3:
