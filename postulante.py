@@ -315,7 +315,8 @@ while True:
                                 print("Opciones inexistente, seleccionar una opcion nuevamente")
                     
                 else:
-                    print("no perteneces a ninguno de los rangos para accedeer a una beca.") 
+                    print("no perteneces a ninguno de los rangos para accedeer a una beca.")
+                    print("Seleccione una de las opciones del menu de Postulante") 
                 break
             
             if modalidad == 2:
