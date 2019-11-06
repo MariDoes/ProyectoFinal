@@ -28,7 +28,6 @@ while True:
                 #YA ESTA LISTO NO TOCAR
                 if 17 <= promedio <=20:
                     print("Felicitaciones estás apto para acceder a la Beca quinto superior")
-                    print("Felicitaciones estás apto para acceder a la Beca tercio superior")
                     print("Por favor ingresa ingresa la carrera a la que vas a postular")
                     print("1 - Ingeniería informátiva y de sistemas")
                     print("2 - Administración para los negocios")
