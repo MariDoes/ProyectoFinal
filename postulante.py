@@ -13,7 +13,7 @@ while True:
         
         
         while True:
-            modalidad = int(input("ingrese la modalidad por la que va postular: "))
+            modalidad = int(input("Ingrese la modalidad por la que va postular: "))
             if modalidad == 1:
                 print ("Bienvenido estás en la modalidad Excelencia academica")
                 print("Por favor ingresa tus notas de cada año desde el 1° a 5° de secundaria")
@@ -25,7 +25,7 @@ while True:
                 suma = (a+b+c+d+e)
                 promedio = suma/5
 
-                #YA ESTA LISTO NO TOCAR
+                #YA ESTA LISTO NO TOCAR QUINTO SUPERIOR 
                 if 17 <= promedio <=20:
                     print("Felicitaciones estás apto para acceder a la Beca quinto superior")
                     print("Por favor ingresa ingresa la carrera a la que vas a postular")
@@ -46,36 +46,36 @@ while True:
                                 matricula = 300
                                 precio = 1600 
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 2:
                                 matricula = 300
                                 precio = 2300
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1000
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrea: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1300
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
@@ -97,36 +97,36 @@ while True:
                                 matricula = 300
                                 precio = 1700
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 2:
                                 matricula = 300
                                 precio = 2400
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1200
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1500
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
@@ -146,46 +146,45 @@ while True:
                                 matricula = 300
                                 precio = 1550
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 2:
                                 matricula = 300
                                 precio = 2350
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1100
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1400
                                 descuento = precio*0.5
-                                total = precio*0.5 + matricula
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
                                 print("Opciones inexistente, seleccionar una opcion nuevamente")
-                
 
-                #YA ESTA LISTO NO TOCAR
-                if 15 <=promedio < 17:
+                #YA ESTA LISTO NO TOCAR TERCIO SUPERIOR
+                elif 15 <=promedio < 17:
                     print("Felicitaciones estás apto para acceder a la Beca tercio superior")
-                    print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                    print("Por favor ingresa la carrera a la que vas a postular")
                     print("1 - Ingeniería informátiva y de sistemas")
                     print("2 - Administración para los negocios")
                     print("3 - Arquitectura")
@@ -202,33 +201,37 @@ while True:
                             if a == 1:
                                 matricula = 300
                                 precio = 1600
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 2:
                                 matricula = 300
                                 precio = 2300
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1000
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1300
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
+                                print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
@@ -248,33 +251,37 @@ while True:
                             if a == 1:
                                 matricula = 300
                                 precio = 1700
+                                descuento = precio*0.7
                                 total = precio*0.7 + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 2:
                                 matricula = 300
                                 precio = 2400
+                                descuento = precio*0.7
                                 total = precio*0.7 + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1200
+                                descuento = precio*0.7
                                 total = precio*0.7 + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1500
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
+                                print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
@@ -292,33 +299,36 @@ while True:
                             if a == 1:
                                 matricula = 300
                                 precio = 1550
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7 
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
                             if a == 2:
                                 matricula = 300
                                 precio = 2350
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7 
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 3:
                                 matricula = 300
                                 precio = 1100
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7 
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             if a == 4:
                                 matricula = 300
                                 precio = 1400
-                                total = precio*0.7 + matricula
+                                descuento = precio*0.7 
+                                total = descuento + matricula
                                 print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
+                                print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
                             else:
@@ -326,9 +336,13 @@ while True:
                     
                 else:
                     print("no perteneces a ninguno de los rangos para accedeer a una beca.")
-                    print("Seleccione una de las opciones del menu de Postulante") 
-                break
-            ##beca 18
+                    print("Seleccione una de las opciones del menu de Postulante nuevamente")
+                    print ("\t1 - Excelencia Académica")
+                    print ("\t2 - Beca 18")
+                    print ("\t3 - Admisión normal")
+                    print ("\t4 - regresar") 
+
+            # BECA 18
             if modalidad == 2:
                 print("Bienvenido estás en la modalidad Beca 18")
                 print("Por favor ingresa ingresa la carrera a la que vas a postular")
@@ -357,7 +371,7 @@ while True:
                     print("Como usted pertenece a beca 18, entonces se cubrirá las siguiente cantidad de gastos ", a)
                     print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                 
-
+            # ADMISION NORMAL
             if modalidad == 3:
                 print ("Bienvenido estás en la modalidad admisón normal")
                 print("Por favor ingresa ingresa la carrera a la que vas a postular")
@@ -373,40 +387,40 @@ while True:
                     "\n4 - Otros")
                     while True:
                         a = int(input("Ingrese el colegio en el que estudio: "))
-                            if a == 1:
-                                matricula = 300
-                                precio = 1600
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 2:
-                                matricula = 300
-                                precio = 2300
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 3:
-                                matricula = 300
-                                precio = 1000
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 4:
-                                matricula = 300
-                                precio = 1300
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Sistemas pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            else:
-                                print("Opciones inexistente, seleccionar una opcion nuevamente")
+                        if a == 1:
+                            matricula = 300
+                            precio = 1600
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 2:
+                            matricula = 300
+                            precio = 2300
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 3:
+                            matricula = 300
+                            precio = 1000
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 4:
+                            matricula = 300
+                            precio = 1300
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        else:
+                            print("Opciones inexistente, seleccionar una opcion nuevamente")
                             
 
                 if x == 2:
@@ -417,40 +431,40 @@ while True:
                     "\n4 - Otros")
                     while True:
                         a = int(input("Ingrese el colegio en el que estudio: "))
-                            if a == 1:
-                                matricula = 300
-                                precio = 1700
-                                total = precio + matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 2:
-                                matricula = 300
-                                precio = 2400
-                                total = precio + matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 3:
-                                matricula = 300
-                                precio = 1200
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 4:
-                                matricula = 300
-                                precio = 1500
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Admi pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            else:
-                                print("Opciones inexistente, seleccionar una opcion nuevamente")
+                        if a == 1:
+                            matricula = 300
+                            precio = 1700
+                            total = precio + matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 2:
+                            matricula = 300
+                            precio = 2400
+                            total = precio + matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 3:
+                            matricula = 300
+                            precio = 1200
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 4:
+                            matricula = 300
+                            precio = 1500
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Administración para los negocios, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        else:
+                            print("Opciones inexistente, seleccionar una opcion nuevamente")
                 if x == 3:
                     print("Usted a elegido la carrera de Arquitectura")
                     print("1 - Innova School / Tricel / Pamer / Saco Oliveros"
@@ -458,40 +472,44 @@ while True:
                     "\n3 - Mariano Melgar / Augusto Salazar Bondy"
                     "\n4 - Otros")
                     while True:
-                         a = int(input("Ingrese el colegio en el que estudio: "))
-                            if a == 1:
-                                matricula = 300
-                                precio = 1550
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 2:
-                                matricula = 300
-                                precio = 2350
-                                total = precio+ matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 3:
-                                matricula = 300
-                                precio = 1100
-                                total = precio + matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            if a == 4:
-                                matricula = 300
-                                precio = 1400
-                                total = precio + matricula
-                                print("*****Aqui esta su boleta de matricula******")
-                                print("Arqui pagaras", total)
-                                print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
-                                break
-                            else:
-                                print("Opciones inexistente, seleccionar una opcion nuevamente")
+                        a = int(input("Ingrese el colegio en el que estudio: "))
+                        if a == 1:
+                            matricula = 300
+                            precio = 1550
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 2:
+                            matricula = 300
+                            precio = 2350
+                            total = precio+ matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 3:
+                            matricula = 300
+                            precio = 1100
+                            total = precio + matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        if a == 4:
+                            matricula = 300
+                            precio = 1400
+                            total = precio + matricula
+                            print("*****Aqui esta su boleta de matricula******")
+                            print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
+                            print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
+                            break
+                        else:
+                            print("Opciones inexistente, seleccionar una opcion nuevamente")
+                break
+            
+            if modalidad == 4:
+                print("Ha regresado exitosamente")
                 break
             
