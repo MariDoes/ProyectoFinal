@@ -42,6 +42,9 @@ while True:
                     x = input("Desea continuar en el menu usilio S/N: ").lower()
                     if x != "s":
                         print("Ha salido existosamente del menu usilio")
+                        print("1.- Alumno usilio"
+                        "\n2.- Postulante Pregrado"
+                        "\n3.- Salir")
                         break
 
             elif (usuario == "abc" and password == "abc"):
@@ -64,6 +67,9 @@ while True:
                     x = input("Desea continuar en el menu usilio S/N: ").lower()
                     if x != "s":
                         print("Ha salido existosamente del menu usilio")
+                        print("1.- Alumno usilio"
+                        "\n2.- Postulante Pregrado"
+                        "\n3.- Salir")
                         break
                     
             else:
@@ -77,8 +83,6 @@ while True:
         print ("\t2 - Beca 18")
         print ("\t3 - Admisión normal")
         print ("\t4 - regresar")
-        
-        
         while True:
             modalidad = int(input("Ingrese la modalidad por la que va postular: "))
             if modalidad == 1:
@@ -304,6 +308,14 @@ while True:
                                 break
                             else:
                                 print("Opciones inexistente, seleccionar una opcion nuevamente")
+                                
+                        x = input("Desea continuar en el menu postulante S/N: ").lower()
+                        if x != "s":
+                            print("Ha salido existosamente del menu postulante")
+                            print("1.- Alumno usilio"
+                            "\n2.- Postulante Pregrado"
+                            "\n3.- Salir")
+                            break
 
                             
 
@@ -403,12 +415,20 @@ while True:
                                 print("Opciones inexistente, seleccionar una opcion nuevamente")
                     
                 else:
-                    print("no perteneces a ninguno de los rangos para accedeer a una beca.")
-                    print("Seleccione una de las opciones del menu de Postulante nuevamente")
-                    print ("\t1 - Excelencia Académica")
-                    print ("\t2 - Beca 18")
-                    print ("\t3 - Admisión normal")
-                    print ("\t4 - regresar") 
+                    print("****No perteneces a ninguno de los rangos para accedeer a una beca****.")
+                    x = input("Desea continuar en el menu postulante S/N: ").lower()
+                    if x != "s":
+                        print("Ha salido existosamente del menu postulante")
+                        print("1.- Alumno usilio"
+                        "\n2.- Postulante Pregrado"
+                        "\n3.- Salir")
+                        break
+                    else:
+                        print("Seleccione una de las opciones del menu de Postulante nuevamente")
+                        print ("\t1 - Excelencia Académica")
+                        print ("\t2 - Beca 18")
+                        print ("\t3 - Admisión normal")
+                        print ("\t4 - regresar") 
 
             # BECA 18
             if modalidad == 2:
