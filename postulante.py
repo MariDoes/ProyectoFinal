@@ -1,7 +1,12 @@
 import os
 os.system("cls")
 while True:
-    opcion = int(input("Seleccione una opcion: "))
+    try:
+        opcion = int(input("Seleccione una opcion: "))
+    except ValueError:
+        print("introduce una de las opciones mostradas")
+        opcion = int(input("Seleccione una opcion: "))
+    pass
 
     if (opcion == 2):
         print("Has pulsado la opción postulante")
@@ -13,15 +18,27 @@ while True:
         
         
         while True:
-            modalidad = int(input("Ingrese la modalidad por la que va postular: "))
+            try:
+                modalidad = int(input("Ingrese la modalidad por la que va postular: "))
+            except ValueError:
+                print("ingrese una de las opciones mostradas")
+                modalidad = int(input("Ingrese la modalidad por la que va postular: "))
             if modalidad == 1:
                 print ("Bienvenido estás en la modalidad Excelencia academica")
                 print("Por favor ingresa tus notas de cada año desde el 1° a 5° de secundaria")
-                a = int(input("ingrese promedio de 1° año de secundaria: "))
-                b = int(input("ingrese promedio de 2° año de secundaria: "))
-                c = int(input("ingrese promedio de 3° año de secundaria: "))
-                d = int(input("ingrese promedio de 4° año de secundaria: "))
-                e = int(input("ingrese promedio de 5° año de secundaria: "))
+                try:
+                    a = int(input("ingrese promedio de 1° año de secundaria: "))
+                    b = int(input("ingrese promedio de 2° año de secundaria: "))
+                    c = int(input("ingrese promedio de 3° año de secundaria: "))
+                    d = int(input("ingrese promedio de 4° año de secundaria: "))
+                    e = int(input("ingrese promedio de 5° año de secundaria: "))
+                except ValueError:
+                    print("ingrese una de las notas del colegio")
+                    a = int(input("ingrese promedio de 1° año de secundaria: "))
+                    b = int(input("ingrese promedio de 2° año de secundaria: "))
+                    c = int(input("ingrese promedio de 3° año de secundaria: "))
+                    d = int(input("ingrese promedio de 4° año de secundaria: "))
+                    e = int(input("ingrese promedio de 5° año de secundaria: "))
                 suma = (a+b+c+d+e)
                 promedio = suma/5
 
@@ -41,7 +58,11 @@ while True:
                         "\n3 - Mariano Melgar / Augusto Salazar Bondy"
                         "\n4 - Otros")
                         while True:
-                            a = int(input("Ingrese el colegio en el que estudio: "))
+                            try:
+                                a = int(input("Ingrese el colegio en el que estudio: "))
+                            except ValueError:
+                                print("ingrese una de las opciones mostradas")
+                                a = int(input("Ingrese el colegio en el que estudio: "))
                             if a == 1:
                                 matricula = 300
                                 precio = 1600 
