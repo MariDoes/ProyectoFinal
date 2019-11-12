@@ -76,12 +76,12 @@ while True:
                 print("Ingresa nuevamente sus datos o seleccione otra opcion")
 
 
-    if (opcion == 2):
+    elif (opcion == 2):
         print("Has pulsado la opción postulante")
         print ("\t1 - Excelencia Académica")
         print ("\t2 - Beca 18")
         print ("\t3 - Admisión normal")
-        print ("\t4 - regresar")
+        print ("\t4 - Regresar")
         while True:
             modalidad = int(input("Ingrese la modalidad por la que va postular: "))
             if modalidad == 1:
@@ -102,6 +102,7 @@ while True:
                     print("1 - Ingeniería informátiva y de sistemas")
                     print("2 - Administración para los negocios")
                     print("3 - Arquitectura")
+                    print("4 - Regresar atras")
                     while True:
                         x = int(input("Ingrese la carrera a la que va postular: "))
                         # Si selecciona la carrera de ING YA ESTA
@@ -157,11 +158,17 @@ while True:
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 - Regresar atras")
 
                                 
 
                         # Si selecciona la cararera de ADMI
-                        if x == 2:
+                        elif x == 2:
                             print("Usted a elegido la carrera de Administración para los negocios")
                             print("Usted a elegido la carrera de Ingeniería informática y de sistemas")
                             print("1 - Innova School / Tricel / Pamer / Saco Oliveros"
@@ -208,13 +215,20 @@ while True:
                                     break
                                 else:
                                     print("Opciones inexistente, seleccionar una opcion nuevamente")
+
                             x = input("Desea continuar en esta sección S/N: ").lower()
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 - Regresar atras")
 
                         # Si selecciona la carrera de ARQUI
-                        if x == 3:
+                        elif x == 3:
                             print("Usted a elegido la carrera de Arquitectura")
                             print("Usted a elegido la carrera de Ingeniería informática y de sistemas")
                             print("1 - Innova School / Tricel / Pamer / Saco Oliveros"
@@ -266,6 +280,16 @@ while True:
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 - Regresar atras")
+
+                        elif x == 4:
+                            break
+
                         else:
                             print("Opciones inexistente, seleccionar una opcion nuevamente")
 
@@ -276,6 +300,11 @@ while True:
                         "\n2.- Postulante Pregrado"
                         "\n3.- Salir")
                         break
+                    else:
+                        print ("\t1 - Excelencia Académica")
+                        print ("\t2 - Beca 18")
+                        print ("\t3 - Admisión normal")
+                        print ("\t4 - regresar")
 
                 #YA ESTA LISTO NO TOCAR TERCIO SUPERIOR
                 elif 15 <=promedio < 17:
@@ -284,6 +313,7 @@ while True:
                     print("1 - Ingeniería informátiva y de sistemas")
                     print("2 - Administración para los negocios")
                     print("3 - Arquitectura")
+                    print("4 - Regresar atras")
                     while True:
                         x = int(input("Ingrese la carrera a la que va postular: "))
                         # Si selecciona la carrera de ING YA ESTA
@@ -304,7 +334,7 @@ while True:
                                     print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                     print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                     break
-                                if a == 2:
+                                elif a == 2:
                                     matricula = 300
                                     precio = 2300
                                     descuento = precio*0.7
@@ -313,7 +343,7 @@ while True:
                                     print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                     print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                     break
-                                if a == 3:
+                                elif a == 3:
                                     matricula = 300
                                     precio = 1000
                                     descuento = precio*0.7
@@ -322,7 +352,7 @@ while True:
                                     print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:",descuento)
                                     print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                     break
-                                if a == 4:
+                                elif a == 4:
                                     matricula = 300
                                     precio = 1300
                                     descuento = precio*0.7
@@ -338,6 +368,12 @@ while True:
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 - Regresar atras")
 
                                 
 
@@ -395,6 +431,12 @@ while True:
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 -  Regresar atras")
 
                         # Si selecciona la carrera de ARQUI
                         elif x == 3:
@@ -447,7 +489,16 @@ while True:
                             if x != "s":
                                 print("Ha salido existosamente")
                                 break
-                        
+                            else:
+                                print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                                print("1 - Ingeniería informátiva y de sistemas")
+                                print("2 - Administración para los negocios")
+                                print("3 - Arquitectura")
+                                print("4 - Regresar atras")
+
+                        elif x == 4:
+                            break
+
                         else:
                             print("Opciones inexistente, seleccionar una opcion nuevamente")
 
@@ -459,6 +510,11 @@ while True:
                         "\n2.- Postulante Pregrado"
                         "\n3.- Salir")
                         break
+                    else:
+                        print ("\t1 - Excelencia Académica")
+                        print ("\t2 - Beca 18")
+                        print ("\t3 - Admisión normal")
+                        print ("\t4 - Regresar atras")
 
                 else:
                     print("****No perteneces a ninguno de los rangos para accedeer a una beca****.")
@@ -474,7 +530,7 @@ while True:
                         print ("\t1 - Excelencia Académica")
                         print ("\t2 - Beca 18")
                         print ("\t3 - Admisión normal")
-                        print ("\t4 - regresar") 
+                        print ("\t4 - Regresar atras") 
 
             # BECA 18
             elif modalidad == 2:
@@ -483,6 +539,7 @@ while True:
                 print("1 - Ingeniería informátiva y de sistemas")
                 print("2 - Administración para los negocios")
                 print("3 - Arquitectura")
+                print("4 - Regresar atras")
                 while True:
                     x = int(input("Ingrese la carrera a la que va postular: "))
                     if x == 1:
@@ -500,6 +557,7 @@ while True:
                             print("1 - Ingeniería informátiva y de sistemas")
                             print("2 - Administración para los negocios")
                             print("3 - Arquitectura")
+                            print("4 - Regresar atras")
                               
                                
                     elif x == 2:
@@ -512,6 +570,13 @@ while True:
                         if x != "s":
                             print("Ha salido existosamente")
                             break
+                        else:
+                            print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                            print("1 - Ingeniería informátiva y de sistemas")
+                            print("2 - Administración para los negocios")
+                            print("3 - Arquitectura")
+                            print("4 - Regresar atras")
+                                        
                         
 
                     elif x == 3:
@@ -524,6 +589,15 @@ while True:
                         if x != "s":
                             print("Ha salido existosamente")
                             break
+                        else:
+                            print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                            print("1 - Ingeniería informátiva y de sistemas")
+                            print("2 - Administración para los negocios")
+                            print("3 - Arquitectura")
+                            print("4 - Regresar atras")
+                    
+                    elif x == 4:
+                            break
 
                     else:
                         print("Opción inexistente, seleccionar nuevamente")
@@ -535,6 +609,11 @@ while True:
                     "\n2.- Postulante Pregrado"
                     "\n3.- Salir")
                     break
+                else:
+                    print ("\t1 - Excelencia Académica")
+                    print ("\t2 - Beca 18")
+                    print ("\t3 - Admisión normal")
+                    print ("\t4 - Regresar")
 
 
                 
@@ -545,6 +624,7 @@ while True:
                 print("1 - Ingeniería informátiva y de sistemas")
                 print("2 - Administración para los negocios")
                 print("3 - Arquitectura")
+                print("4 - Regresar atras")
                 while True:
                     x = int(input("Ingrese la carrera a la que va postular: "))
                     if x == 1:
@@ -587,12 +667,20 @@ while True:
                                 print("Carrera: Ing de Sistemas, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
+                            
                             else:
                                 print("Opciones inexistente, seleccionar una opcion nuevamente")
                         x = input("Desea continuar en esta sección S/N: ").lower()
                         if x != "s":
                             print("Ha salido existosamente")
-                            break 
+                            break
+                        else:
+                            print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                            print("1 - Ingeniería informátiva y de sistemas")
+                            print("2 - Administración para los negocios")
+                            print("3 - Arquitectura")
+                            print("4 - Regresar atras")
+                         
                                 
 
                     elif x == 2:
@@ -641,6 +729,13 @@ while True:
                         if x != "s":
                             print("Ha salido existosamente")
                             break 
+                        else:
+                            print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                            print("1 - Ingeniería informátiva y de sistemas")
+                            print("2 - Administración para los negocios")
+                            print("3 - Arquitectura")
+                            print("4 - Regresar atras")
+
                     elif x == 3:
                         print("Usted a elegido la carrera de Arquitectura")
                         print("1 - Innova School / Tricel / Pamer / Saco Oliveros"
@@ -657,7 +752,7 @@ while True:
                                 print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
-                            if a == 2:
+                            elif a == 2:
                                 matricula = 300
                                 precio = 2350
                                 total = precio+ matricula
@@ -665,7 +760,7 @@ while True:
                                 print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
-                            if a == 3:
+                            elif a == 3:
                                 matricula = 300
                                 precio = 1100
                                 total = precio + matricula
@@ -673,7 +768,7 @@ while True:
                                 print("Carrera: Arquitectura, pagaras en su primera cuota:", total, "luego pagará cada una de las demás cuotas:", precio)
                                 print("Si desea continuar con el proceso, venga a nuestros establecimiento, gracias.")
                                 break
-                            if a == 4:
+                            elif a == 4:
                                 matricula = 300
                                 precio = 1400
                                 total = precio + matricula
@@ -687,6 +782,16 @@ while True:
                         if x != "s":
                             print("Ha salido existosamente")
                             break
+                        else:
+                            print("Por favor ingresa ingresa la carrera a la que vas a postular")
+                            print("1 - Ingeniería informátiva y de sistemas")
+                            print("2 - Administración para los negocios")
+                            print("3 - Arquitectura")
+                            print("4 - Regresar atras")
+
+                    elif x == 4:
+                        break
+
                     else:
                         print("Opción inexistente, seleccione nuevamente")
 
@@ -697,17 +802,29 @@ while True:
                     "\n2.- Postulante Pregrado"
                     "\n3.- Salir")
                     break
+                else:
+                    print ("\t1 - Excelencia Académica")
+                    print ("\t2 - Beca 18")
+                    print ("\t3 - Admisión normal")
+                    print ("\t4 - regresar")
 
             
             elif modalidad == 4:
                 print("Ha regresado exitosamente")
+                print("Selecciona una de las opciones de su preferencia")
+                print("1.- Alumno usilio"
+                "\n2.- Postulante Pregrado"
+                "\n3.- Salir")
                 break
             
                
 
     
-    if opcion == 3:
+    elif opcion == 3:
         print("Termino la aplicacion, muchas gracias")
         break
+
+    else:
+        print("Opción inexistente, intente nuevamente")
 
 
