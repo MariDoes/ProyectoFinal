@@ -1,5 +1,6 @@
 import os
 os.system("cls")
+
 while True:
     try:
         opcion = int(input("Seleccione una opcion: "))
