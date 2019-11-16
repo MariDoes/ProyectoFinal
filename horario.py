@@ -25,6 +25,8 @@ os.system("cls")
  #                   print("En Fisica general lo has pasado con 17, pasaste a la 1era")
 #                  print("Esta disponible a llevar los cursos siguientes pero no de Calculo II")
 
+from funciones import volvercalculo2,volvereconomia,volverestadistica,volverfisica,volveringles6,volvertaller2, estadistica
+
 opcionalum = int(input("Seleccione una opcion del menu usilio: "))
 cursos=["c1","f1","poo","t","m","intro"]
 cursos2020=["Calculo 2","Fisica 2","Estadistica", "Taller 2", "Economia", "Ingles 6"]
@@ -51,18 +53,27 @@ while True:
             print("Cálculo 2: "
             "\n1. José Reyes"
             "\n2. Luisa Fernández")
-            a=int(input("Escoja el profesor con el que desea llevar el curso:"))
-            hCalculo2=[]
-            hReyes=[[1,28800],[2,36000],[4,36000]]
-            hFernandez=[[2,36000],[3,36000],[5,28800]]
-            if a==1:
-                for i in range(3):
-                    hCalculo2.append(hReyes[i])
-            else:
-                for i in range(3):
-                    hCalculo2.append(hFernandez[i])
+            while True:
+                a=int(input("Escoja el profesor con el que desea llevar el curso:"))
+                hCalculo2=[]
+                hReyes=[[1,28800],[2,36000],[4,36000]]
+                hFernandez=[[2,36000],[3,36000],[5,28800]]
+                if a==1:
+                    for i in range(3):
+                        hCalculo2.append(hReyes[i])
+                    break
+                elif a == 2:
+                    for i in range(3):
+                        hCalculo2.append(hFernandez[i])
+                    break
+                else:
+                    print("Elige nuevamente")
+                    print("Cálculo 2: "
+                    "\n1. José Reyes"
+                    "\n2. Luisa Fernández")
+
                 
-            
+        
             print("Física 2: "
             "\n1. Iris García"
             "\n2. Richard Guanira")
@@ -76,30 +87,29 @@ while True:
                         for i in range(3):
                             if hGarcía[i]!=hCalculo2[i]:
                                 hFisica2.append(hGarcía[i])
-                                
-                                
                             else:
                                 print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                                
-                                
+                                volverfisica()
                         break
-
+                    estadistica()
+                    break
                 
-                else:
+                elif b == 2:
                     while True:
                         for i in range(3):
-                            if hGuanira[i]==hCalculo2[i]:
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                                
-                            else:
+                            if hGuanira[i]!=hCalculo2[i]:
                                 hFisica2.append(hGuanira[i])
-                                
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
                         break
-                break
+                    estadistica()
+                    break
+                else:
+                    volverfisica()
             
 
 
-
+        def estadistica():
             print("Estadística: "
             "\n1. Pedro Montesino"
             "\n2. Omar Rivas")
@@ -116,23 +126,29 @@ while True:
                                 
                             else:
                                 print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                                
+                                volverestadistica()
                         break
-                else:
+                    break
+                elif c == 2:
                     while True:
                         for i in range(3):
-                            if hRivas[i]!=hCalculo2[i] or hRivas[i]!=hFisica2[i]:
+                            if hRivas[i]!=hCalculo2[i] and hRivas[i]!=hFisica2[i]:
                                 hEstadistica.append(hRivas[i])
-                                
                             else:
                                 print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                                
+                                x = input("Presione s para volver: ")
+                                if x == "s":
+                                    volverestadistica()
+                                    break
+                                break
                         break
-                break
+                    break
+                else:
+                    volverestadistica()
 
                                 
 
-
+        def taller():
             print("Taller 2:"
             "\n1. María Cordova"
             "\n2. Carmen Ramírez")
@@ -145,22 +161,27 @@ while True:
                 if d==1:
                     while True:
                         for i in range(3):
-                            if hCordova[i]==hCalculo2[i] or hCordova[i]==hFisica2[i] or hCordova[i]==hEstadistica[i] :
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hCordova[i]!=hCalculo2[i] or hCordova[i]!=hFisica2[i] or hCordova[i]!=hEstadistica[i] :
                                 hTaller2.append(hCordova[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
+                                volvertaller2()
                         break
-                else:
+                    break
+                elif d == 2:
                     while True:
                         for i in range(3):
-                            if hRamirez[i]==hCalculo2[i] or hRamirez[i]==hFisica2[i] or hRamirez[i]==hEstadistica[i]:
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hRamirez[i]!=hCalculo2[i] or hRamirez[i]!=hFisica2[i] or hRamirez[i]!=hEstadistica[i]:
                                 hTaller2.append(hRamirez[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
+                                volvertaller2()
                         break
-                break
+                    break
+                else:
+                    volvertaller2()
 
-
+        def economia():
             print("Economía:"
             "\n1. Cielo Tamariz"
             "\n2. Ricardo Paz")
@@ -172,26 +193,28 @@ while True:
                 if e==1:
                     while True:
                         for i in range(3):
-                            if hTamariz[i]==hCalculo2[i] or hTamariz[i]==hFisica2[i] or hTamariz[i]==hEstadistica[i] or hTamariz[i]==hTaller2[i] :
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hTamariz[i]!=hCalculo2[i] or hTamariz[i]!=hFisica2[i] or hTamariz[i]!=hEstadistica[i] or hTamariz[i]!=hTaller2[i] :
                                 hEconomia.append(hTamariz[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
                         break
-                else:
+                    break
+                elif e == 2:
                     while True:
                         for i in range(3):
-                            if hPaz[i]==hCalculo2[i] or hPaz[i]==hFisica2[i] or hPaz[i]==hEstadistica[i] or hPaz[i]==hTaller2[i]:
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hPaz[i]!=hCalculo2[i] or hPaz[i]!=hFisica2[i] or hPaz[i]!=hEstadistica[i] or hPaz[i]!=hTaller2[i]:
                                 hEconomia.append(hPaz[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
                         break
-                break
-
+                    break
+                else:
+                    volvereconomia()
+        def ingles():
             print("Inglés 6:"
             "\n1. Mariell Muller"
             "\n2. Rocío Durán")
             while True:
-
                 f=int(input("Escoja el profesor con el que desea llevar el curso:"))
                 hIngles=[]
                 hMuller=[[1,46800],[3,36000],[6,46800]]
@@ -199,20 +222,25 @@ while True:
                 if f==1:
                     while True:
                         for i in range(3):
-                            if hMuller[i]==hCalculo2[i] or hMuller[i]==hFisica2[i] or hMuller[i]==hEstadistica[i] or hMuller[i]==hTaller2[i] or hMuller[i]==hEconomia[i]:
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hMuller[i]!=hCalculo2[i] or hMuller[i]!=hFisica2[i] or hMuller[i]!=hEstadistica[i] or hMuller[i]!=hTaller2[i] or hMuller[i]==hEconomia[i]:
                                 hIngles.append(hMuller[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
                         break
-                else:
+                    break
+                elif f==2:
                     while True:
                         for i in range(3):
-                            if hDuran[i]==hCalculo2[i] or hDuran[i]==hFisica2[i] or hDuran[i]==hEstadistica[i] or hDuran[i]==hTaller2[i] or hDuran[i]==hEconomia[i]:
-                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                            else:
+                            if hDuran[i]!=hCalculo2[i] or hDuran[i]!=hFisica2[i] or hDuran[i]!=hEstadistica[i] or hDuran[i]!=hTaller2[i] or hDuran[i]==hEconomia[i]:
                                 hIngles.append(hDuran[i])
+                            else:
+                                print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
                         break
-                break
+                    break
+                else:
+                    volveringles6()
+
+        def metodos():
             diasCalculo=[]  ## Arreglo donde se guarda las primeras componentes del contenido del arreglo hCalculo2
             dCalculo=[] ## Arreglo donde se guarda a que día corresponde cada componente del arreglo diasCalculo
             horarioCalculo=[] ## Arreglo donde se guarda las segundas componentes del contenido del arreglo hCalculo2
@@ -451,10 +479,12 @@ while True:
             if notas1[5] >= 10.5:
                 cursos = print("Puedes llevar los siguientes cursos "+cursos2020[5])
             break
+        
         continuar = input("Desea ir a la eleccion de horarios? S/N: ").lower()
         if continuar != "s":
             print("Espere un momento, regresará al menú principal")
         else:
+
             print("A continuación se mostrará la lista de profesores de cada curso que puedas llevar:")
             print("Física 2: "
             "\n1. Iris García"

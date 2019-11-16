@@ -156,3 +156,78 @@ def notasmariaelena():
     print("En ADD lo has pasado con 14, pasaste a la 1era")
     print("En Fisica general lo has pasado con 17, pasaste a la 1era")
     print("Esta disponible a llevar los cursos siguientes pero no de Calculo II")
+
+
+# Para el horario
+def volvercalculo2():
+    print("Elige nuevamente")
+    print("Cálculo 2: "
+    "\n1. José Reyes"
+    "\n2. Luisa Fernández")
+
+def volverfisica():
+    print("Elige nuevamente")
+    print("Física 2: "
+    "\n1. Iris García"
+    "\n2. Richard Guanira")
+
+def volverestadistica():
+    print("Elige nuevamente")
+    print("Estadística: "
+    "\n1. Pedro Montesino"
+    "\n2. Omar Rivas")
+
+def volvertaller2():
+    print("Elige nuevamente")
+    print("Taller 2:"
+    "\n1. María Cordova"
+    "\n2. Carmen Ramírez")
+
+def volvereconomia():
+    print("Elige nuevamente")
+    print("Economía:"
+    "\n1. Cielo Tamariz"
+    "\n2. Ricardo Paz")
+
+def volveringles6():
+    print("Elige nuevamente")
+    print("Inglés 6:"
+    "\n1. Mariell Muller"
+    "\n2. Rocío Durán")
+
+def estadistica():
+    print("Estadística: "
+    "\n1. Pedro Montesino"
+    "\n2. Omar Rivas")
+    while True:    
+        c=int(input("Escoja el profesor con el que desea llevar el curso:"))
+        hEstadistica=[]
+        hMontesino=[[3,28800],[4,28800],[5,36000]]
+        hRivas=[[1,28800],[2,46800],[5,46800]]
+        if c==1:
+            while True:
+                for i in range(3):
+                    if hMontesino[i]!=hCalculo2[i] or hMontesino[i]!=hFisica2[i]:
+                        hEstadistica.append(hMontesino[i])
+                        
+                    else:
+                        print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
+                        volverestadistica()
+                break
+            break
+        elif c == 2:
+            while True:
+                for i in range(3):
+                    if hRivas[i]!=hCalculo2[i] and hRivas[i]!=hFisica2[i]:
+                        hEstadistica.append(hRivas[i])
+                    else:
+                        print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
+                        x = input("Presione s para volver: ")
+                        if x == "s":
+                            volverestadistica()
+                            break
+                        break
+                break
+            break
+        else:
+            volverestadistica()
