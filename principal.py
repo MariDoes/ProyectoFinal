@@ -1508,7 +1508,6 @@ while True:
                                 
                                 
                         elif x == 2:
-                            print("Usted a elegido la carrera de Administración para los negocios")
                             a = 2000
                             beca18admi(a)
                             x = input("Desea continuar en esta sección S/N: ").lower()
@@ -1521,7 +1520,6 @@ while True:
                             
 
                         elif x == 3:
-                            print("Usted a elegido la carrera de Arquitectura")
                             a = 1850
                             beca18arqui(a)
                             x = input("Desea continuar en esta sección S/N: ").lower()
