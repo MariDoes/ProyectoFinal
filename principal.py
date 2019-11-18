@@ -259,7 +259,7 @@ while True:
                                     tiempoInicialCalculo.append(horarioCalculo[i]//3600)
                                     tiempoFinCalculo.append((horarioCalculo[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Cálculo 2, los siguientes días:")
                                 for i in range(3):
                                     print(dCalculo[i],"de",tiempoInicialCalculo[i],"a",tiempoFinCalculo[i],"horas")
@@ -294,7 +294,7 @@ while True:
                                     tiempoInicialFisica.append(horarioFisica[i]//3600)
                                     tiempoFinFisica.append((horarioFisica[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Física 2, los siguientes días:")
                                 for i in range(3):
                                     print(dFisica[i],"de",tiempoInicialFisica[i],"a",tiempoFinFisica[i],"horas")
@@ -329,7 +329,7 @@ while True:
                                     tiempoInicialEstadistica.append(horarioEstadistica[i]//3600)
                                     tiempoFinEstadistica.append((horarioEstadistica[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Estadística, los siguientes días:")
                                 for i in range(3):
                                     print(dEstadistica[i],"de",tiempoInicialEstadistica[i],"a",tiempoFinEstadistica[i],"horas")
@@ -365,7 +365,7 @@ while True:
                                     tiempoInicialTaller.append(horarioTaller[i]//3600)
                                     tiempoFinTaller.append((horarioTaller[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Taller 2, los siguientes días:")
                                 for i in range(3):
                                     print(dTaller[i],"de",tiempoInicialTaller[i],"a",tiempoFinTaller[i],"horas")
@@ -400,7 +400,7 @@ while True:
                                     tiempoInicialEconomia.append(horarioEconomia[i]//3600)
                                     tiempoFinEconomia.append((horarioEconomia[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Economía, los siguientes días:")
                                 for i in range(3):
                                     print(dEconomia[i],"de",tiempoInicialEconomia[i],"a",tiempoFinEconomia[i],"horas")
@@ -435,7 +435,7 @@ while True:
                                     tiempoInicialIngles.append(horarioIngles[i]//3600)
                                     tiempoFinIngles.append((horarioIngles[i]//3600)+2)
 
-
+                                print("-----------------------------------------------------------")
                                 print("Usted tiene Inglés 6, los siguientes días:")
                                 for i in range(3):
                                     print(dIngles[i],"de",tiempoInicialIngles[i],"a",tiempoFinIngles[i],"horas")
@@ -1682,7 +1682,3 @@ while True:
         else:
             print("Opción inexistente, intente nuevamente")
             break
-
-    
-
-
