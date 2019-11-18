@@ -31,7 +31,13 @@ def mostrarmenucarreranormal():
     print("3 - Arquitectura")
     print("4 - Regresar atras")
 
-
+# Datos de alumno 
+def david():
+    print("Bienvenido alumno David, que desea realizar hoy")
+    print("Le recordamos eres de la modalidad de tercio superior")
+    print("Selecciona una de las opciones que desea realizar: "
+    "\n1.- Numero de veces que llevas en un curso y notas"
+    "\n2.- Eleccion de horarios 2020-01")
 # Menu colegio
 
 def colegios():
@@ -161,73 +167,75 @@ def notasmariaelena():
 # Para el horario
 def volvercalculo2():
     print("Elige nuevamente")
-    print("Cálculo 2: "
-    "\n1. José Reyes"
-    "\n2. Luisa Fernández")
+    print("Cálculo 2, 4 creditos: "
+    "\n1. José Reyes: Lunes de 8 a 10 horas Martes de 10 a 12 horas Jueves de 10 a 12 horas"
+    "\n2. Luisa Fernández: Lunes de 8 a 10 horas Miércoles de 10 a 12 horas Viernes de 8 a 10 horas")
 
 def volverfisica():
     print("Elige nuevamente")
-    print("Física 2: "
-    "\n1. Iris García"
-    "\n2. Richard Guanira")
+    print("Física 2, 3 creditos: "
+    "\n1. Iris García: Lunes de 10 a 12 horas Martes de 13 a 15 horas Jueves de 13 a 15 horas"
+    "\n2. Richard Guanira: Lunes de 13 a 15 horas Martes de 8 a 10 horas Viernes de 13 a 15 horas")
 
 def volverestadistica():
     print("Elige nuevamente")
-    print("Estadística: "
-    "\n1. Pedro Montesino"
-    "\n2. Omar Rivas")
+    print("Estadística, 3 creditos: "
+    "\n1. Pedro Montesino: Miércoles de 8 a 10 horas Jueves de 8 a 10 horas Viernes de 10 a 12 horas"
+    "\n2. Omar Rivas: Lunes de 8 a 10 horas Martes de 13 a 15 horas Viernes de 13 a 15 horas")
 
 def volvertaller2():
     print("Elige nuevamente")
-    print("Taller 2:"
-    "\n1. María Cordova"
-    "\n2. Carmen Ramírez")
+    print("Taller 2, 3 creditos:"
+    "\n1. María Cordova: Miércoles de 13 a 15 horas Viernes de 15 a 17 horas Sábado de 8 a 10 horas"
+    "\n2. Carmen Ramírez: Jueves de 15 a 17 horas Lunes de 19 a 21 horas Sábado de 10 a 12 horas")
 
 def volvereconomia():
     print("Elige nuevamente")
-    print("Economía:"
-    "\n1. Cielo Tamariz"
-    "\n2. Ricardo Paz")
+    print("Economía, 3 creditos:"
+    "\n1. Cielo Tamariz: Martes de 15 a 17 horas Viernes de 17 a 19 horas Sábado de 15 a 17 horas"
+    "\n2. Ricardo Paz: Miércoles de 15 a 17 horas Jueves de 19 a 21 horas Sábado de 13 a 15 horas")
 
 def volveringles6():
     print("Elige nuevamente")
-    print("Inglés 6:"
-    "\n1. Mariell Muller"
-    "\n2. Rocío Durán")
+    print("Inglés 6, 3 creditos:"
+    "\n1. Mariell Muller: Lunes de 15 a 17 horas Martes de 19 a 21 horas Viernes de 19 a 21 horas"
+    "\n2. Rocío Durán: Miércoles de 19 a 21 horas Viernes de 19 a 21 horas Sábado de 19 a 21 horas")
 
-def estadistica():
-    print("Estadística: "
-    "\n1. Pedro Montesino"
-    "\n2. Omar Rivas")
-    while True:    
-        c=int(input("Escoja el profesor con el que desea llevar el curso:"))
-        hEstadistica=[]
-        hMontesino=[[3,28800],[4,28800],[5,36000]]
-        hRivas=[[1,28800],[2,46800],[5,46800]]
-        if c==1:
-            while True:
-                for i in range(3):
-                    if hMontesino[i]!=hCalculo2[i] or hMontesino[i]!=hFisica2[i]:
-                        hEstadistica.append(hMontesino[i])
-                        
-                    else:
-                        print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                        volverestadistica()
-                break
-            break
-        elif c == 2:
-            while True:
-                for i in range(3):
-                    if hRivas[i]!=hCalculo2[i] and hRivas[i]!=hFisica2[i]:
-                        hEstadistica.append(hRivas[i])
-                    else:
-                        print("Se ha detectado un cruce de horarios. Por favor, escoja otro horario")
-                        x = input("Presione s para volver: ")
-                        if x == "s":
-                            volverestadistica()
-                            break
-                        break
-                break
-            break
-        else:
-            volverestadistica()
+def profcalculodavid():
+    print("A continuación se mostrará la lista de profesores de cada curso que puedas llevar:")
+    print("Cálculo 2, 4 creditos: "
+    "\n1. José Reyes: Lunes de 8 a 10 horas Martes de 10 a 12 horas Jueves de 10 a 12 horas"
+    "\n2. Luisa Fernández: Lunes de 8 a 10 horas Miércoles de 10 a 12 horas Viernes de 8 a 10 horas")
+
+def profefisicadavid():
+    print("Física 2, 3 creditos: "
+    "\n1. Iris García: Lunes de 10 a 12 horas Martes de 13 a 15 horas Jueves de 13 a 15 horas"
+    "\n2. Richard Guanira: Lunes de 13 a 15 horas Martes de 8 a 10 horas Viernes de 13 a 15 horas")
+def profeestadavid():
+    print("Estadística, 3 creditos: "
+    "\n1. Pedro Montesino: Miércoles de 8 a 10 horas Jueves de 8 a 10 horas Viernes de 10 a 12 horas"
+    "\n2. Omar Rivas: Lunes de 8 a 10 horas Martes de 13 a 15 horas Viernes de 13 a 15 horas")
+def profets2david():
+    print("Taller 2, 3 creditos:"
+    "\n1. María Cordova: Miércoles de 13 a 15 horas Viernes de 15 a 17 horas Sábado de 8 a 10 horas"
+    "\n2. Carmen Ramírez: Jueves de 15 a 17 horas Lunes de 19 a 21 horas Sábado de 10 a 12 horas")
+def profeecodavid():
+    print("Economía, 3 creditos:"
+    "\n1. Cielo Tamariz: Martes de 15 a 17 horas Viernes de 17 a 19 horas Sábado de 15 a 17 horas"
+    "\n2. Ricardo Paz: Miércoles de 15 a 17 horas Jueves de 19 a 21 horas Sábado de 13 a 15 horas")
+def profeingles6():
+    print("Inglés 6, 3 creditos:"
+    "\n1. Mariell Muller: Lunes de 15 a 17 horas Martes de 19 a 21 horas Viernes de 19 a 21 horas"
+    "\n2. Rocío Durán: Miércoles de 19 a 21 horas Viernes de 19 a 21 horas Sábado de 19 a 21 horas")
+
+def volvercalculoI():
+    print("Elige nuevamente")
+    print("Cálculo 1, 4 creditos: "
+    "\n1. Carlos Bravo: Lunes de 8 a 10 horas Martes de 10 a 12 horas Jueves de 10 a 12 horas"
+    "\n2. Alex Lenin: Lunes de 8 a 10 horas Miércoles de 10 a 12 horas Viernes de 8 a 10 horas")
+
+def profcalculomari():
+    print("A continuación se mostrará la lista de profesores de cada curso que puedas llevar:")
+    print("Cálculo 1, 4 creditos: "
+    "\n1. Carlos Bravo: Lunes de 8 a 10 horas Martes de 10 a 12 horas Jueves de 10 a 12 horas"
+    "\n2. Alex Lenin: Lunes de 8 a 10 horas Miércoles de 10 a 12 horas Viernes de 8 a 10 horas")
