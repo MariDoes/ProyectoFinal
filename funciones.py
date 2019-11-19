@@ -38,6 +38,12 @@ def david():
     print("Selecciona una de las opciones que desea realizar: "
     "\n1.- Numero de veces que llevas en un curso y notas"
     "\n2.- Eleccion de horarios 2020-01")
+def mari():
+    print("Bienvenido alumna Mariaelena, que desea realizar hoy")
+    print("Le recordamos eres de la modalidad de beca 18")
+    print("Selecciona una de las opciones que desea realizar: "
+    "\n1.- Numero de veces que llevas en un curso"
+    "\n2.- Eleccion de horarios 2020-01")
 # Menu colegio
 
 def colegios():

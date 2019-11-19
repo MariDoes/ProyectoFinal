@@ -5,7 +5,7 @@ import math
 from funciones import mostrarmenucarreratercio,mostrarmenucarreraquinto,promedio,totaltercio, colegios, menuprincipal,menupostulante, cuotasistemas, cuotaadmi, cuotaarqui, beca18sist, beca18arqui, beca18admi, regresarmenucarrera, regresarmunupostulante
 from funciones import notasdavid,notasmariaelena, totalnormal, totalquito, mostrarmenucarerrabeca18, mostrarmenucarreranormal, normaladmi,normalsistemas,normalarqui
 from funciones import volvercalculo2,volvereconomia,volverestadistica,volverfisica,volveringles6,volvertaller2
-from funciones import profcalculodavid,profeecodavid,profeestadavid,profefisicadavid,profeingles6,profets2david, profcalculomari, volvercalculoI, david
+from funciones import profcalculodavid,profeecodavid,profeestadavid,profefisicadavid,profeingles6,profets2david, profcalculomari, volvercalculoI, david, mari
 cursos=["c1","f1","poo","t","m","intro"]
 cursos2020=["Calculo 2","Fisica 2","Estadistica", "Taller 2", "Economia", "Ingles 6"]
 diasSemana=["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
@@ -454,11 +454,7 @@ while True:
                         
                                     
                 elif (usuario == "abc" and password == "abc"):
-                    print("Bienvenido alumna Mariaelena, que desea realizar hoy")
-                    print("Le recordamos eres de la modalidad de beca 18")
-                    print("Selecciona una de las opciones que desea realizar: "
-                    "\n1.- Numero de veces que llevas en un curso"
-                    "\n2.- Eleccion de horarios 2020-01")
+                    mari()
                     while True:
                         opcionalum = int(input("Seleccione una opcion del menu usilio: "))
                         if opcionalum == 1:
@@ -497,6 +493,7 @@ while True:
                             continuar = input("Desea ir a la eleccion de horarios? S/N: ").lower()
                             if continuar != "s":
                                 print("Espere un momento, regresará al menú principal")
+                                menuprincipal()
                             else:
                                 pregunta = input("Antes de empezar, va desea llevar el curso de calculo I este ciclo? S/N: ").lower()
                                 if pregunta == "s":
@@ -699,7 +696,7 @@ while True:
                                         tiempoInicialCalculo.append(horarioCalculo[i]//3600)
                                         tiempoFinCalculo.append((horarioCalculo[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Cálculo 1, los siguientes días:")
                                     for i in range(3):
                                         print(dCalculo[i],"de",tiempoInicialCalculo[i],"a",tiempoFinCalculo[i],"horas")
@@ -734,7 +731,7 @@ while True:
                                         tiempoInicialFisica.append(horarioFisica[i]//3600)
                                         tiempoFinFisica.append((horarioFisica[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Física 2, los siguientes días:")
                                     for i in range(3):
                                         print(dFisica[i],"de",tiempoInicialFisica[i],"a",tiempoFinFisica[i],"horas")
@@ -769,7 +766,7 @@ while True:
                                         tiempoInicialEstadistica.append(horarioEstadistica[i]//3600)
                                         tiempoFinEstadistica.append((horarioEstadistica[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Estadística, los siguientes días:")
                                     for i in range(3):
                                         print(dEstadistica[i],"de",tiempoInicialEstadistica[i],"a",tiempoFinEstadistica[i],"horas")
@@ -805,7 +802,7 @@ while True:
                                         tiempoInicialTaller.append(horarioTaller[i]//3600)
                                         tiempoFinTaller.append((horarioTaller[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Taller 2, los siguientes días:")
                                     for i in range(3):
                                         print(dTaller[i],"de",tiempoInicialTaller[i],"a",tiempoFinTaller[i],"horas")
@@ -840,7 +837,7 @@ while True:
                                         tiempoInicialEconomia.append(horarioEconomia[i]//3600)
                                         tiempoFinEconomia.append((horarioEconomia[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Economía, los siguientes días:")
                                     for i in range(3):
                                         print(dEconomia[i],"de",tiempoInicialEconomia[i],"a",tiempoFinEconomia[i],"horas")
@@ -875,14 +872,15 @@ while True:
                                         tiempoInicialIngles.append(horarioIngles[i]//3600)
                                         tiempoFinIngles.append((horarioIngles[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Inglés 6, los siguientes días:")
                                     for i in range(3):
                                         print(dIngles[i],"de",tiempoInicialIngles[i],"a",tiempoFinIngles[i],"horas")
                                     sumacreditos = credical+credieco+crediesta+credifi+crediingles+credits2
                                     print("Creditos totales: ", sumacreditos)
+                                    menuprincipal()
                                     break
-
+                                        
                                 # SI ES QUE SELECCIONA NO QUIERE LLEVAR CALCULO    
                                 else:
                                     profefisicadavid()
@@ -1053,7 +1051,7 @@ while True:
                                         tiempoInicialFisica.append(horarioFisica[i]//3600)
                                         tiempoFinFisica.append((horarioFisica[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Física 2, los siguientes días:")
                                     for i in range(3):
                                         print(dFisica[i],"de",tiempoInicialFisica[i],"a",tiempoFinFisica[i],"horas")
@@ -1088,7 +1086,7 @@ while True:
                                         tiempoInicialEstadistica.append(horarioEstadistica[i]//3600)
                                         tiempoFinEstadistica.append((horarioEstadistica[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Estadística, los siguientes días:")
                                     for i in range(3):
                                         print(dEstadistica[i],"de",tiempoInicialEstadistica[i],"a",tiempoFinEstadistica[i],"horas")
@@ -1124,7 +1122,7 @@ while True:
                                         tiempoInicialTaller.append(horarioTaller[i]//3600)
                                         tiempoFinTaller.append((horarioTaller[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Taller 2, los siguientes días:")
                                     for i in range(3):
                                         print(dTaller[i],"de",tiempoInicialTaller[i],"a",tiempoFinTaller[i],"horas")
@@ -1159,7 +1157,7 @@ while True:
                                         tiempoInicialEconomia.append(horarioEconomia[i]//3600)
                                         tiempoFinEconomia.append((horarioEconomia[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Economía, los siguientes días:")
                                     for i in range(3):
                                         print(dEconomia[i],"de",tiempoInicialEconomia[i],"a",tiempoFinEconomia[i],"horas")
@@ -1194,12 +1192,13 @@ while True:
                                         tiempoInicialIngles.append(horarioIngles[i]//3600)
                                         tiempoFinIngles.append((horarioIngles[i]//3600)+2)
 
-
+                                    print("-----------------------------------------------------------")
                                     print("Usted tiene Inglés 6, los siguientes días:")
                                     for i in range(3):
                                         print(dIngles[i],"de",tiempoInicialIngles[i],"a",tiempoFinIngles[i],"horas")
                                     sumacreditos = credieco+crediesta+credifi+crediingles+credits2
                                     print("Creditos totales: ", sumacreditos)
+                                    menuprincipal()
                                     break
                             break
                     
@@ -1691,6 +1690,7 @@ while True:
             "\n Para la aplicación de error y excepciones:"
             "\n - PythonforBeginners: https://www.pythonforbeginners.com/error-handling/python-try-and-except"
             "\n - Tutorial de Python 3.6.3: http://docs.python.org.ar/tutorial/3/errors.html")
+            menuprincipal()
             break
 
         else:
