@@ -86,7 +86,7 @@ while True:
                                     
                             
                                 profefisicadavid()
-                                credifi = 3
+                                credifi = 4
                                 while True:
                                     b=int(input("Escoja el profesor con el que desea llevar el curso:"))
                                     hFisica2=[]
@@ -521,7 +521,7 @@ while True:
                                         
                                 
                                     profefisicadavid()
-                                    credifi = 3
+                                    credifi = 4
                                     while True:
                                         b=int(input("Escoja el profesor con el que desea llevar el curso:"))
                                         hFisica2=[]
@@ -886,7 +886,7 @@ while True:
                                 # SI ES QUE SELECCIONA NO QUIERE LLEVAR CALCULO    
                                 else:
                                     profefisicadavid()
-                                    credifi = 3
+                                    credifi = 4
                                     while True:
                                         b=int(input("Escoja el profesor con el que desea llevar el curso:"))
                                         hFisica2=[]

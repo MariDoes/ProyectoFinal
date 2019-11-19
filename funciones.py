@@ -174,7 +174,7 @@ def volvercalculo2():
 
 def volverfisica():
     print("Elige nuevamente")
-    print("Física 2, 3 creditos: "
+    print("Física 2, 4 creditos: "
     "\n1. Iris García: Lunes de 10 a 12 horas Martes de 13 a 15 horas Jueves de 13 a 15 horas"
     "\n2. Richard Guanira: Lunes de 13 a 15 horas Martes de 8 a 10 horas Viernes de 13 a 15 horas")
 
@@ -209,7 +209,7 @@ def profcalculodavid():
     "\n2. Luisa Fernández: Lunes de 8 a 10 horas Miércoles de 10 a 12 horas Viernes de 8 a 10 horas")
 
 def profefisicadavid():
-    print("Física 2, 3 creditos: "
+    print("Física 2, 4 creditos: "
     "\n1. Iris García: Lunes de 10 a 12 horas Martes de 13 a 15 horas Jueves de 13 a 15 horas"
     "\n2. Richard Guanira: Lunes de 13 a 15 horas Martes de 8 a 10 horas Viernes de 13 a 15 horas")
 def profeestadavid():
