@@ -54,7 +54,8 @@ def menuprincipal():
     print("Selecciona una de las opciones de su preferencia")
     print("1.- Alumno usilio"
     "\n2.- Postulante Pregrado"
-    "\n3.- Salir")
+    "\n3.- Salir"
+    "\n4.- Referencias")
 def menupostulante():
     print("Has pulsado la opción postulante")
     print ("\t1 - Excelencia Académica")

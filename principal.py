@@ -14,7 +14,12 @@ menuprincipal()
 
 # Codificacion de eleccion de menu
 while True:
-    opcion = int(input("Seleccione una opcion del menu: "))
+    try:
+        opcion = int(input("Seleccione una opcion: "))
+    except ValueError:
+        print("introduce una de las opciones mostradas")
+        opcion = int(input("Seleccione una opcion: "))
+    pass
     if opcion == 3:
             print("Cerro la aplicación exitosamente")
             break
@@ -1677,7 +1682,16 @@ while True:
             break
                 
 
-        
+        elif (opcion == 4):
+            print(" Para la aplicación de funciones:"
+            "\n - Jonathan Chavez"
+            "\n - Covantec: https://entrenamiento-python-basico.readthedocs.io/es/latest/leccion5/funciones.html"
+            "\n - Programiz: https://www.programiz.com/python-programming/function"
+            "\n"
+            "\n Para la aplicación de error y excepciones:"
+            "\n - PythonforBeginners: https://www.pythonforbeginners.com/error-handling/python-try-and-except"
+            "\n - Tutorial de Python 3.6.3: http://docs.python.org.ar/tutorial/3/errors.html")
+            break
 
         else:
             print("Opción inexistente, intente nuevamente")
