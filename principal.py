@@ -2,10 +2,8 @@ import os
 os.system("cls")
 import math
 
-from funciones import mostrarmenucarreratercio,mostrarmenucarreraquinto,promedio,totaltercio, colegios, menuprincipal,menupostulante, cuotasistemas, cuotaadmi, cuotaarqui, beca18sist, beca18arqui, beca18admi, regresarmenucarrera, regresarmunupostulante
-from funciones import notasdavid,notasmariaelena, totalnormal, totalquito, mostrarmenucarerrabeca18, mostrarmenucarreranormal, normaladmi,normalsistemas,normalarqui
-from funciones import volvercalculo2,volvereconomia,volverestadistica,volverfisica,volveringles6,volvertaller2
-from funciones import profcalculodavid,profeecodavid,profeestadavid,profefisicadavid,profeingles6,profets2david, profcalculomari, volvercalculoI, david, mari
+from funciones import *
+
 cursos=["c1","f1","poo","t","m","intro"]
 cursos2020=["Calculo 2","Fisica 2","Estadistica", "Taller 2", "Economia", "Ingles 6"]
 diasSemana=["Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"]
@@ -882,6 +880,8 @@ while True:
                                         print(dIngles[i],"de",tiempoInicialIngles[i],"a",tiempoFinIngles[i],"horas")
                                     sumacreditos = credical+credieco+crediesta+credifi+crediingles+credits2
                                     print("Creditos totales: ", sumacreditos)
+                                x = input("Desea continuar en el menu usilio S/N: ").lower()
+                                if x != "s":
                                     menuprincipal()
                                     break
                                         
