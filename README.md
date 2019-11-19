@@ -14,13 +14,13 @@ basado en el pilar de Sostenibilidad y Emprendimiento. Primero habra un menú qu
 
 * Menu 
 1. Alumno usilio
-	- Usuario y cont
-		- Modalidad
-		- numero de veces que llevas el curso
+	- Usuario y contraseña
+		- Numero de veces que llevas el curso
 		- Eleccion de horarios
-        - Resumen
 2. Postulante Pregrado
 	- Modalidad (Excelencia academica, beca 18, admision normal)
+		- Notas
 		- Carrera
-		- Matricula
-		- Boleto
+		- Colegio
+3. Salir
+4. Referencias

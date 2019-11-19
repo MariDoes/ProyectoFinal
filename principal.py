@@ -20,12 +20,14 @@ while True:
         print("introduce una de las opciones mostradas")
         opcion = int(input("Seleccione una opcion: "))
     pass
+    # Cerrr aplicación
     if opcion == 3:
             print("Cerro la aplicación exitosamente")
             break
 
     # Ingreso de datos del alumno
     while True:
+        # Ingreso de datos del alumno
         if (opcion == 1):
             usuario = input("Ingrese su usuario: ")
             password = input("Ingrese su contraseña: ")
@@ -39,6 +41,7 @@ while True:
                     "\n2.- Eleccion de horarios 2020-01")
                     while True:
                         opcionalum = int(input("Seleccione una opcion del menu usilio: "))
+                        # Opcion para ver notas
                         if opcionalum == 1:
                             notasdavid()
                             x = input("Desea continuar en el menu usilio S/N: ").lower()
@@ -48,6 +51,7 @@ while True:
                                 "\n2.- Postulante Pregrado"
                                 "\n3.- Salir")
                                 break
+                        # Opcion para ver horario
                         elif opcionalum ==2:
                             notas=[]
                             notas.append(15.0)
@@ -1208,7 +1212,7 @@ while True:
                     menuprincipal()
                 break
             break
-
+        # Postulante
         elif (opcion == 2):
             menupostulante()
             while True:
@@ -1680,7 +1684,7 @@ while True:
                     break
             break
                 
-
+        # Referencias
         elif (opcion == 4):
             print(" Para la aplicación de funciones:"
             "\n - Jonathan Chavez"
@@ -1692,7 +1696,7 @@ while True:
             "\n - Tutorial de Python 3.6.3: http://docs.python.org.ar/tutorial/3/errors.html")
             menuprincipal()
             break
-
+        # Error de opcion
         else:
             print("Opción inexistente, intente nuevamente")
             break
